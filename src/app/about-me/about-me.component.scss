@@ -1,0 +1,66 @@
+
+.abc {
+    position: absolute;
+    right: 0;
+    top: 84vh;
+    z-index: 7;
+}
+
+.about-me-c {
+    position: relative;
+    color: white;
+    z-index: 5;
+    display: flex;
+    gap: 6%;
+    height: auto;
+
+    h1 {
+        font-size: 90px !important;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        font-size: 16px;
+
+    }
+
+    .personal-things {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 45px;
+            height: 50px;
+            object-fit: cover;
+            padding-right: 60px;
+            padding-top: 30px;
+            padding-left: 60px;
+        }
+    }
+}
+
+.circle-me {
+    display: flex;
+}
+
+.circle-me img {
+    object-fit: cover;
+    border-radius: 100%;
+    border: solid 2px #FA7902;
+}
+
+
+
+
+
+.sideline {
+    width: 25vw;
+    position: relative;
+    top: 48%;
+    margin-top: 0;
+    border: 0;
+    border-top: solid 2px #FA7902;
+
+}

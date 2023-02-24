@@ -1,0 +1,133 @@
+.me {
+
+    width: 100vw;
+    height: 80vh;
+    padding-top: 110px;
+    background-color: #141D2F;
+
+    .me-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        height: 80%;
+        width: 88%;
+
+        .me-img img {
+            position: relative;
+            top: 275px;
+            right: 32px;
+        }
+
+        .overlay img {
+            position: absolute;
+            top: 150px;
+            width: 500px;
+            left: 150px;
+            top: 23%;
+            z-index: 1;
+        }
+
+
+        .introduce {
+            display: flex;
+            height: max-content;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .i-am {
+                font-size: 64px;
+                writing-mode: vertical-lr;
+                display: inline;
+                -moz-transform: scale(-1, -1);
+                -webkit-transform: scale(-1, -1);
+                -o-transform: scale(-1, -1);
+                -ms-transform: scale(-1, -1);
+                transform: scale(-1, -1);
+                word-spacing: -17px;
+                text-align: center;
+                margin-right: 10px;
+                font-style: bold;
+            }
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                line-height: 340%;
+
+                .my-name {
+                    font-size: 90px;
+                    margin-bottom: -25px;
+                    text-align: center;
+                }
+
+                .job-title {
+                    font-size: 58px;
+                    text-align: center;
+                    color: #FF4747;
+                }
+            }
+
+            button {
+                background-color: #FA7902;
+                color: white;
+                border-radius: 10px;
+                border: solid 1px #FA7902;
+                width: max-content;
+                padding: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 20px;
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+
+.me-end img {
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    top: 40vh;
+    height: 100%;
+    z-index: 3;
+}
+
+.social-btns {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+
+    .social-btns-line {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        height: 30px;
+        color: white;
+        font-size: 20px;
+
+        .left-line {
+            width: 5% ;
+            text-align: center ;
+            border-bottom: 2px solid #FF4747 ;
+        }
+    }
+
+    .scroll-down-hint {
+        position: relative;
+        top: -150px;
+        right: 80px;
+        color:white; 
+        writing-mode: vertical-lr;
+        display: inline;
+        text-align: center;
+        margin-right: 10px;
+        font-style: 400;
+        font-size: 23px;
+        
+    }
+}
