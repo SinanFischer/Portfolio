@@ -1,50 +1,54 @@
-<div class="me"> 
-    <div class="me-content"> 
+    <section id="me-c" class="me">
+        <div class="main">
+        
+            <div class="myself-container">
+                <img src="../assets/img/shadows/me-background.png" id="shadow-of-myself">
+                <img src="../assets/img/me(1).png" id="picture-of-myself">
+            </div> 
 
-        <div class="me-img"> 
-            <img src="../assets/img/shadows/me-background.png" id="shadow"> 
-            <div class="overlay "> 
-                <img src="../assets/img/me(1).png" > 
-            </div>
-        </div>
-
-        <div class="introduce"> 
-            <div style="display:flex"> 
-                <span class="i-am"> I am </span> 
-                <div class="title"> 
-                    <strong class="my-name">  Sinan Fischer </strong> <br> 
-                    <strong class="job-title"> FRONTEND DEVELOPER </strong> 
+            <div class="introduce-container"> 
+                <div class="introduce">
+                    <div style="display:flex">
+                        <span class="i-am"> I am </span>
+                        <div class="title">
+                            <strong class="my-name"> Sinan Fischer </strong> <br>
+                            <strong class="job-title"> FRONTEND DEVELOPER </strong>
+                        </div>
+                    </div>
+                    <a href="#contact-c"> 
+                        <button>
+                            Let's talk!
+                        </button>
+                    </a>
                 </div>
             </div>
-
-            <button> 
-                Let's talk! 
-            </button>
-
         </div>
 
-    </div>
-</div>
+        <div class="bottom-overlay">
+            <img src="../assets/img/background-mobile.png" id="background">
+      
+            <div class="social-btns">
+                <div class="social-btns-line">
+                    <hr class="sideline">
+                    <img src="../assets/img/icons/git-small.png" class="scale" *ngIf="!isSmallView">
+                    <img src="../assets/img/icons/git-big.png" class="scale" *ngIf="isSmallView"  >
+                    <img src="../assets/img/icons/linkedin-small.png" class="scale" *ngIf="!isSmallView">
+                    <img src="../assets/img/icons/linkedin-big.png" class="scale" *ngIf="isSmallView">
+                    <img src="../assets/img/icons/mail-small.png" class="scale" *ngIf="!isSmallView">
+                    <img src="../assets/img/icons/mail-big.png" class="scale" *ngIf="isSmallView" >
+                    <span *ngIf="!isSmallView"> sinanfischer@gmail.com </span>
+                </div>
+        
+                <div class="scroll-down-hint" *ngIf="!isSmallView">
+                    <span> Scroll down </span>
+                    <img src="../assets/img/icons/arrow-down.png">
+                </div>
+            </div>
+      
+        </div>
 
 
-<div class="me-end"> 
- <img src="../assets/img/background.png"> 
-</div>
 
 
-<div class="social-btns">
-    <div class="social-btns-line">  
-        <h5 class="left-line"> 
-        </h5> 
-            <img src="../assets/img/icons/git-small.png"> 
-            <img src="../assets/img/icons/linkedin-small.png"> 
-            <img src="../assets/img/icons/mail-small.png"> 
-            <span> sinanfischer@gmail.com </span>
-    </div>
 
-    <div class="scroll-down-hint"> 
-        <span> Scroll down </span> 
-        <img src="../assets/img/icons/arrow-down.png"> 
-    </div>
-
-</div>
+</section>

@@ -1,0 +1,23 @@
+
+<div class="sidebar-opener" class="box"  (click)="sidebarShow = !sidebarShow"  (click)="burgerMenuOpen = !burgerMenuOpen">
+   
+    <div class="btn " [ngClass]="{'not-active': !burgerMenuOpen, 'active' : burgerMenuOpen }">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+</div>            
+
+
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+
+    <div class="sidebar-content">
+        <a href="#me-c" class="none"> Hi! </a>
+        <a href="#about-me" > About me</a>
+        <a href="#skills-c " > Skills </a>
+        <a href="#portfolio-c" > Portfolio</a>
+        <a href="#contact-c"> Contact</a>
+    </div>
+</div>
+

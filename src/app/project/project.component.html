@@ -1,0 +1,29 @@
+
+<div *ngFor="let project of projects; let i = index" class="project-c about-me-c reveal  "  (window:scroll)="reveal()"
+[ngClass]="{'project-c-reverse': isOdd(i), 'fade-left': isEven(i), 'fade-right': isOdd(i), 'is-responsive': 'isMediumView'}">
+
+    <div class="project-img"  [class.project-img-reverse]="isOdd(i)"> 
+        <img src="{{project['img']}}"> 
+    </div>
+    
+        <div class="project-description" [class.project-description-reverse]="isOdd(i)"  > 
+            <h2 > 
+                {{project['title']}} 
+            </h2>
+
+            <h3> 
+                {{project['skills']}} 
+            </h3>
+
+            <p> 
+                {{project['description']}} 
+            </p>
+
+            <div class="buttons" [class.buttons-reverse]="isOdd(i)"> 
+                <a href="{{project['livetest']}}" target=”_blank” > <button class="red"> Live Test </button> </a>
+                <a href="{{project['git']}}" target=”_blank” ><button class="orange"> Github </button> </a>
+            </div>
+        </div>
+</div>
+
+

@@ -1,0 +1,54 @@
+
+img {
+    position: absolute;
+    left: 0;
+    bottom: 500;
+}
+
+.portfolio-c {
+    position: relative;
+    z-index: 3;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+            .left {
+            margin-left: 5vw;
+        }
+
+    .sideline {
+        margin: 0;
+        width: 35vw;
+        position: relative;
+        top: 48%;
+        margin-top: 0;
+        border: 0;
+        border-top: solid 4px #FF4747;
+    }
+}
+
+.portfolio-middle-shadow img {
+    position: absolute;
+    top: 900px;
+    left: 0;
+    width: 600px;
+    max-width: 90%;
+    z-index: 1;
+}
+

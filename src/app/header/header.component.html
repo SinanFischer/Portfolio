@@ -4,11 +4,15 @@
             Sinan 
         </h2>
 
-        <nav> 
-            <a href="#"> About me </a>
-            <a href="#"> Skills </a>
-            <a href="#"> Portfolio</a>
+        <nav *ngIf="!isXsmallView"> 
+            <a href="#me-c" class="none"> Hi! </a>
+            <a href="#about-me" > About me</a>
+            <a href="#skills-c " > Skills </a>
+            <a href="#portfolio-c" > Portfolio</a>
+            <a href="#contact-c" class="none"> Contact</a>
         </nav>
+
+        <app-sidebar *ngIf="isXsmallView"> </app-sidebar>
     </div>
 
 </header>

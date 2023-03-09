@@ -1,0 +1,39 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  background-color: #141D2F;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+header div h2 {
+  padding-left: 20px;
+  font-size: 32px;
+}
+header div nav {
+  gap: 40px;
+}
+header div nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  padding-right: 20px;
+}
+header div nav a:hover {
+  color: #FA7902;
+}
+
+.nav-mark {
+  color: #FA7902 !important;
+}

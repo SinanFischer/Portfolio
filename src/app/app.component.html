@@ -1,3 +1,10 @@
-<app-header> </app-header>
-<app-me> </app-me>
-<app-about-me> </app-about-me>
+<app-header [isXsmallView]="isXsmallViewParent" > </app-header >
+
+<app-me [isSmallView]="isSmallViewParent"> </app-me>
+    <app-about-me [isSmallView]="isSmallViewParent"> </app-about-me>
+ <app-my-skills [isMediumView]="isMediumViewParent"> </app-my-skills> 
+ <app-portfolio> </app-portfolio> 
+ <app-project [isMediumView]="isMediumViewParent"> </app-project>
+ <app-contact> </app-contact>
+ <app-footer  [isMediumView]="isMediumViewParent"> </app-footer>
+<span (window:scroll)="onScroll()"></span> 

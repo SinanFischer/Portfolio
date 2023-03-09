@@ -1,0 +1,127 @@
+#contact-c {
+    position: relative;
+    z-index: 1;
+}
+
+.headline {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 50px;
+
+
+    h1 {
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sideline {
+        margin: 0;
+        margin-right: 2vw;
+        width: 4vw;
+        top: 48%;
+        border: 0;
+        border-top: solid 4px #FF4747;
+    }
+}
+
+.contact {
+
+    display: flex;
+    justify-content: space-around;
+    margin-left: calc(6vw + 20px);
+    margin-right: calc(6vw + 20px);
+    gap: 8vw;
+
+    @media (max-width: 960px) {
+        flex-direction: column;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 32px;
+        color: white;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (max-width: 960px) {
+        align-items: center;
+
+    }
+
+    input,
+    textarea {
+
+        width: 40vw;
+        background-color: rgba($color: #000000, $alpha: 0);
+        border: solid 1px #FF4747;
+        border-radius: 10px;
+        padding: 15px 25px 15px 25px;
+        margin-bottom: 30px;
+        color: white;
+
+        @media (max-width: 960px) {
+            width: 100%;
+        }
+    }
+
+    textarea {
+        min-height: 200px;
+    }
+
+    .btn-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vw;
+    }
+
+    button {
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+    }
+
+    .go-up-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        a:hover {
+            cursor: pointer;
+        }
+    }
+
+}
+
+.contact-invite {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 960px) {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+}
+
+.shadow-footer {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    bottom: -155px;
+
+    img {
+        width: 480px;
+        height: 500px;
+        object-fit: cover;
+        max-width: 30vw;
+        max-height: 40vw;
+    }
+}

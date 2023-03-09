@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 50;
 
 
     div {
@@ -25,13 +25,21 @@ header {
 
         nav {
             gap: 40px;
-
             a {
                 text-decoration: none;
                 color: white;
                 font-size: 23px;
                 padding-right: 20px;
+
+                &:hover {
+                    color: #FA7902;
+                }
             }
         }
     }
 }
+
+.nav-mark {
+ color: #FA7902 !important;
+}
+

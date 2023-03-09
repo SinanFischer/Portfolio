@@ -1,0 +1,40 @@
+
+<section class="skills-c" id="skills-c" >
+
+    <div class="all-skills-container"> 
+        <div class="my-skills">
+            <div class="skill  reveal fade-left "  (window:scroll)="reveal()" *ngFor="let skill of skills" >
+                <img src="{{skill['img']}}">
+                <span> {{skill['name']}} </span>
+            </div>
+        </div>
+
+        <div class="btn" *ngIf="isMediumView"> 
+            <button> 
+                Get in Touch 
+            </button>
+        </div>
+    </div>
+
+        <div class="skills-description reveal fade-right">
+            <div> 
+                <h1>
+                    My skills
+                </h1>
+                <hr class="sideline">
+            </div>
+
+            <p>
+                I have grown my frontend developents skills that have allowed me to create different real projects.
+            </p>
+
+            <div class="btn" *ngIf="!isMediumView"> 
+                <button> 
+                    Get in Touch 
+                </button>
+            </div>
+
+        </div>
+
+</section>
+

@@ -1,0 +1,50 @@
+<section id="contact-c" class="reveal fade-bottom " (window:scroll)="reveal()">
+    <div class="headline">
+
+        <hr class="sideline">
+        <h1>
+            Contact
+        </h1>
+
+    </div>
+
+    <div class="contact">
+
+        <div class="contact-invite">
+            <h2>
+                Got a problem to solve?
+            </h2>
+
+            <p>
+                Contact me through this form, I am Interested in hearing you, knowing your ideas
+                and contributing to your projects with my work.
+                <br>
+                <br> 
+                Need a frontend developer? <strong> Contact me! </strong>
+            </p>
+        </div>
+
+
+        <form (submit)="sendMail()" method="post" ngNativeValidate #contactForm > 
+
+            <input required placeholder="Your name" type="text" name="name" #nameField>  
+            <input required placeholder="Your email" type="email" name="mail" #mailField >
+
+            <textarea placeholder="Your message" type="text" name="message" #textarea> </textarea>
+
+            <div class="btn-row">
+                <button #button> Send message :) </button >
+            </div>
+
+            <div class="go-up-container"> 
+                <a href="#me-c"w> <img src="../assets/img/icons/go-up-btn.png"> </a>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="shadow-footer">
+        <img src="../assets/img/shadows/shadow-footer.png">
+    </div>
+
+</section>
